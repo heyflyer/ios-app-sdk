@@ -1,0 +1,11 @@
+framework module HeyFlyer {
+  umbrella header "HeyFlyer.h"
+
+  export *
+  module * { export * }
+}
+
+module HeyFlyer.Swift {
+    header "HeyFlyer-Swift.h"
+    requires objc
+}
