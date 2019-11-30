@@ -108,7 +108,7 @@ The next step is linking your framework to the newly created app. Before linking
 
 ## Author
 
-icanpunit, ican.punit@gmail.com
+HeyFlyer, mandip.kanjiya@heyflyer.com
 
 ## License
 
