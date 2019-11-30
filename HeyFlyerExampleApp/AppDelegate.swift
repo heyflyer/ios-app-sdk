@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-         setHeyFlyerServerKey.init(setKey: "API_KEY_HERE")
+         setHeyFlyerServerKey.init(setKey: "API_KEY_ENTER_HERE")
         // Override point for customization after application launch.
         return true
     }
