@@ -98,6 +98,35 @@ class ViewController: UIViewController,HttpHeyflyerDelegate {
     }
 }
 ```
+
+##### Retrieving Flight Arrival Data using Code
+
+```swift
+    //Get Airport Arrival Flight Information
+    func GetAirportArrivalData()
+    {
+        //Check Net Connection First
+        self.getairportData = HttpHeyFlyerWrapper.init()
+        self.getairportData.delegate = self
+        self.getairportData.ArrivalAirportData(AirpotCode: "DXB", apiUserId: "1")
+        
+    }
+```
+
+##### Retrieving Flight Departure Data using Code
+
+```swift
+    //Get Airport Departure Flight Information
+    func GetAirportArrivalData()
+    {
+        //Check Net Connection First
+        self.getairportData = HttpHeyFlyerWrapper.init()
+        self.getairportData.delegate = self
+        self.getairportData.DepartureAirportData(AirpotCode: "DXB", apiUserId: "1")
+        
+    }
+```
+
 ##### Set Embedded Binaries
 
 The next step is linking your framework to the newly created app. Before linking it, it is convenient to drag the .framework file into the project folder of the new app. Now, select the app target and select the ‘general’ tab in the app settings. Scroll to ‘Embedded Binaries’ and press the ‘plus’ icon to embed a new binary.
